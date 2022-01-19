@@ -4,20 +4,17 @@
 
 using namespace std;
 
-int cetak(string, int);
+int cetak(char *);
 
 int main() {
-    string nama;
-    int umur;
-    cout << "masukan nama anda" << endl;
-    cin >> nama;
-    cout << "masukan umur anda" << endl;
-    cin >> umur;
-    cetak(nama, umur);
+    char huruf[100];
+    cout << "Masukkan nama: ";
+    cin.get(huruf, 100);
+    cetak(huruf);
     getch();
+    return 0;
 }
 
-int cetak(string a, int b) {
-    cout << "halo, nama anda " << a << endl;
-    cout << "umur anda " << b << endl;
+int cetak(char a[]) {
+    cout << "Halo " << a << "!" << endl;
 }
