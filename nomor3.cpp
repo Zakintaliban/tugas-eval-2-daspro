@@ -6,18 +6,20 @@ using namespace std;
 
 int total(int, int);
 
+int angka[10] = {1,2,3,4,5,6,7,8,9,10};
+
 int main () {
-    int angka1, angka2, sum;
-    cout << "masukan angka 1: " << endl;
-    cin >> angka1;
-    cout << "masukan angka 1: " << endl;
-    cin >> angka2;
-    sum = total(angka1, angka2);
-    cout << sum << endl;
+    int e, f, g;
+    cout << "masukan angka 1-10: " << endl;
+    cin >> g;
+    cout << "masukan nilainya" << endl;
+    cin >> f;
+    e = total(g, f);
+    cout << e << endl;
     getch();
     return 0;
 }
 
-int total(int a, int b) {
-    return a+b;
+int total(int c, int b) {
+    return angka[c] + b;
 }
